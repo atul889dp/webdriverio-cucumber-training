@@ -1,6 +1,6 @@
-import { Given, When, Then } from 'cucumber';
+import { Given, When, Then } from '@cucumber/cucumber';
 
-const expectChai = require('chai').expect;
+import { expect as expectChai } from 'chai'
 
 Given(/^I am on the (\w+) page$/, (page) => {
     let url= `https://the-internet.herokuapp.com/${page}`
